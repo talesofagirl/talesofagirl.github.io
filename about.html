@@ -1,18 +1,17 @@
 <!DOCTYPE html PUBLIC> 
-<head>
     <title>About Me</title>
     <style type="text/css">
-    /* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+    /* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
 
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
 body {
   background-color: white;
   color: black;
   font-family: Verdana;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
 
 :root {
 
@@ -258,8 +257,16 @@ span {
 
 .credit { position: fixed;     bottom: 0.7em;    right: 1em; }
 .credit a {font-size: 14px; text-decoration: none; transition: 0.3s ease all; color:  var(--text);}
+
+.contact-form{
+  width: 250px; 
+  border: 0; 
+  font-family: times; 
+  padding: 10px;
+}
+
+
     </style>
-</head>
 
 <!------------------------------------------------------
 
@@ -309,15 +316,15 @@ span {
 <form action="https://getform.io/f/689e0cf9-1785-4f2f-8838-8e483524947a" method="POST">
     <p>
       <!--<label>Email</label><br>-->
-      <input style="width: 200px; border: 0" class="double-border" type="email" name="email" placeholder="Email">
+      <input class="double-border contact-form" type="email" name="email" placeholder="Email">
     </p>
     <p>
       <!--<label>Message</label><br>-->
-      <textarea class="double-border" style="width: 200px; border:0" rows="5" name="message" placeholder="Type your message here" ></textarea>
+      <textarea class="double-border contact-form" rows="8" name="message" placeholder="Type your message here" ></textarea>
     </p>  
     <!-- add hidden Honeypot input to prevent spams -->
     <input type="hidden" name="_gotcha" style="display:none !important">
-    <button type="submit">Send</button>
+    <button style="padding:10px 20px; font-family: times; border: 0" class="double-border type="submit">Submit</button>
 </form>
 </p>
 </div>
