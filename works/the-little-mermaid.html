@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC> 
+
+<!------------------------------------------------------
+
+      no exit @ aureacor
+    
+    - do not steal
+    - do not remove credit, or take portions of my code for your own page
+    - do not claim as your own
+    - do not use my code as a base
+
+    - font: sorts mill goudy by Barry Schwartz
+    - icon: fontawesome
+
+-------------------------------------------------------->
+<title>The Little Mermaid - Tales of a Girl</title>
+  
+<style type="text/css"> 
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+
+:root {
+
+/* FONTS */
+  --font-one: Sorts Mill Goudy; 
+  --font-two: times;
+
+
+/*  COLORS */
+  --background: #F9F6F0;
+  --border: #d4cdc9;
+
+  --text: #000; 
+  --linkhover: #ccc;
+  --bold: #000;  
+  --specialbg: #bfb5ae;  
+  --text-special: #fff;  
+
+
+/*  SIIZING */
+  --container: 560px;
+  --line-divider: 50px;
+
+  --text-header: 40px;
+  --text-subtitle: 20px;
+  --text-navigation: 12px;
+  --text-inline: 12px;
+
+  --text-firstletter: 400%;
+  --text-body: 13.5px;
+  --text-bold: 10.5px;
+  --text-quote: 12px;
+}
+
+/* GENERAL */
+
+::-webkit-scrollbar { display: none; }
+
+ body {
+    background: var(--background);
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* MAIN TITLE */
+
+ .header {
+    margin: 50px auto;
+    text-align: center;
+    width: var(--container);
+    word-break: break-word;
+}
+
+.header h1 {
+    font-family: var(--font-one);
+    text-transform: none;
+    font-weight: 400;
+    font-size:  var(--text-header);
+    line-height: 70px;
+    margin: 15px 0px;
+ }
+
+.header i {
+    font-family: var(--font-two);
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: var(--text-subtitle);
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+a {
+    padding: 0 10px;
+    margin-top: 0px;
+    font-family: var(--font-two);
+    text-decoration: none;
+    color: var(--text);
+    font-style: none;
+    letter-spacing: 1px;
+    transition: 0.5s ease all;
+    font-size: 13px;
+}
+
+a:hover {
+    color: var(--linkhover);
+    transition: 0.5s ease all;
+}
+
+.header em {
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.line {
+    width: 1px;
+    height: var(--line-divider);
+    background: var(--text);
+    margin: 35px auto 35px auto;
+}
+
+/* THREE PART SECTION  */
+
+ .flex-container {
+    display: flex;
+    justify-content: space-around;
+    width: var(--container);
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+ .flex-items {
+    height: 20px;
+    margin: 10px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#flex-center img {
+    height:  60px; 
+   object-fit: contain;
+}
+
+#flex-sides {
+    font-size: var(--text-inline);
+    font-family: var(--font-two);
+    font-style: none;
+    letter-spacing: 1px;
+    padding: 0 10px;
+}
+
+#flex-sides img {
+    height:  60px; 
+   object-fit: contain;
+/* BODY  */
+}
+
+.text {
+    color: var(--text);
+    width: var(--container);
+    margin: 0 auto;
+    margin-top: 70px;
+    border: 2px solid var(--background);
+    padding: 0px 65px 30px 65px;
+    margin-bottom: 75px;
+    text-align:center;
+}
+
+.double-border {
+  outline: 2px solid var(--border);
+  box-shadow:inset 0 0 0 1px var(--border);
+}
+
+span {
+    float: left;
+    margin-top: 15px; /* change top of the letter's spacing */
+    width: .8em;  /* change right of the letter's spacing */
+    font-size: var(--text-firstletter);
+    font-family: var(--font-two);
+}
+
+
+.text p {
+    font-family: var(--font-two);
+    font-size: var(--text-body);
+    text-align: justify;
+    line-height: 165%;
+ }
+
+.text b {
+    text-transform: uppercase;
+    font-size: var(--text-bold);
+    color: var(--bold);
+    letter-spacing: 0.5px;
+}
+
+.text special {
+    color: var(--text-special);
+    background: var(--specialbg);
+    padding: 1px 5px;
+    border-radius: 2px;
+    margin: 0 2px;
+}
+
+.text u {
+    text-decoration: none;
+    border-bottom: 1.5px solid var(--border);
+}
+
+.text img {
+    width: 100%;
+    object-fit: cover;
+    padding: 20px 0px;
+}
+
+
+/* QUOTE  */
+
+#quote {
+  width: 70%;
+  font-style: italic;
+  font-size: var(--text-quote);
+  letter-spacing: 1px;
+  text-transform: none;
+  text-align: center;
+  margin: 35px auto 35px auto;
+}
+
+#quote em {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#quote em i {
+ text-transform: lowercase;
+ font-weight: 400;
+ margin-left: 8px;
+}
+
+/* SUB HEADER  */
+    
+#subheader {
+  font-family: var(--font-one);
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 1px;
+  margin: 40px 0px -15px 0px; 
+ }
+
+#subheader-subtitle {
+  font-family: var(--font-two);
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 1px;
+  font-style: none;
+  text-align: center;
+  margin-bottom: 30px;
+ }
+
+.credit { position: fixed;     bottom: 0.7em;    right: 1em; }
+.credit a {font-size: 14px; text-decoration: none; transition: 0.3s ease all; color:  var(--text);}
+
+</style>
+<body>
+
+<div class="text double-border">
+<div class="header">
+    <h1>Tales of a Girl</h1>
+    
+     <a href="/index">Index </a>  <em>*</em> 
+     <a href="/about">About Me </a> <em>*</em> 
+     <a href="/credits" target="_new">Credits</a>
+</div>
+
+
+<div class="flex-container">
+
+      <div class="flex-items" id="flex-sides" style="border-right: 1px solid var(--border);"><a href="/works/mary"><img src="https://lh3.googleusercontent.com/pw/AJFCJaW9JqWzhwTx4Bo7oERn5CYShKZSqgZkrSyBj17RIJYjvlb_h_Zv0rspjv2I-ruNJVGJdmUFYzVj7fT0zn3DdKFMB7K9nSlDgLr0VpaSCMICJQu4jBv9g493xXBnJVsCX8sVONm5FWy405v2B7RR_ul5=w640-h640-s-no?authuser=2"></img></a></div> 
+
+      <div class="flex-items" id="flex-center"><a href="/works/the-little-mermaid"><img src="https://lh3.googleusercontent.com/pw/AIL4fc_Ak8hOTiJ7w4PHQNOny4LCjR92fs2O_C6Z8Xc9ff98axTyOQe_k1ybvoGf0L9hu7_QWGTPYON1iispKNe4jAUapr447wfvAM_9IBWRDRpg0GSFPIy20loEtf69t2vXsG-YH3pk1HPKGMVlj09J03Zx=w369-h369-s-no?authuser=1"></img></a></div>  <!-- PLACE IMAGE HERE -->
+    
+      <div class="flex-items" id="flex-sides" style="border-left: 1px solid var(--border);"><a href="/index"><img src="https://lh3.googleusercontent.com/pw/AJFCJaWIlM99Ham8uvRIdsd9YaXxzFU8lb-PCRAuJo0_QvlX3wpQDvqrQfvg0IjXwwQgbXogVDZpUCN-6DBcONFDILXAiqHSTCRGMDVtezfiEP_lBCvTrubwg4l6TMHc1fV27dsGxGH0lck4dai7dGrX4JWk=w480-h480-s-no?authuser=2"></img></a></div>  <!-- COPY THIS LINE IF YOU WANT MORE ITEMS -->
+
+</div>
+
+<h1 id="subheader">The Little Mermaid</h1>
+    <p id="subheader-subtitle"> (2023) </p>
+
+<p> <span>T</span> <b>he Little Mermaid</b> is a series of expressionistic photographs inspired by the 1968 Soviet animated film of the same name, <i>Русалочка</i> (romanized: Rusalochka). Both my work and the film are based on the fairy tale by Hans Christian Andersen.</p>
+
+<p>This project hearkens back to my childhood memories of playing mermaids at public swimming pools. All of the photographs were taken at a residential swimming pool, revisiting the world of magic and make-believe both physically and figuratively.</p>
+
+<img src="https://lh3.googleusercontent.com/pw/AIL4fc_R9S0hxc0qk1VDWySIxVR8VK1_1_DuqkTWIPvZVWVErhjbbBhWBt9erOSnCeal4bt-_-X-poJdzH9HyzmpT4GoA0NrE2HN0mOd_jce-_QNDvM-S9ygxEOmOBhfzoZnTMaE3rrrxwI67FbISi89G_U9=w800-h533-s-no?authuser=1 title="Untitled, 2023.">
+<img src="https://lh3.googleusercontent.com/pw/AIL4fc_ZEf6NjYmOsl_iuJktDMyo3Fgu309R-CZyirEl-Hm46-IPjssyUwCAnnXuPdICtCdatUsahgzyrEIqlgbBMGOd6e3WMpZgApvdjO7FwXaIyuCSegA4PI3gT_iv9gBTfgdIbrQ9U0aBqxdy0Huxx-pf=w800-h600-s-no?authuser=1" title="Untitled, 2023. / Untitled, 2023.">
+<img src="https://lh3.googleusercontent.com/pw/AIL4fc8ylwDNc6bu2SaHNdolI0Gv-7Ug3bFA5Wlzt3kpQXK8PMPzqDLgH0Jl1MHKuQ8cpp3iDDDIrdbXP7AmoddIRphzE0-8mHEJHQ583RjQXjKfo-B6p6rh2UEcqK-9i_g08ouB77jRZ-sBbsY1qFG2_EOQ=w800-h533-s-no?authuser=1" title="Untitled, 2023.">
+<img src="https://lh3.googleusercontent.com/pw/AIL4fc_Nzvy4z4CnjkEWdHz5pJqIURmsJlqFrlPey2s7qJGmbhQGqLEc2Zi1XW7VH7ADA87gWfL0QhfCwSA73E8Tn286OCxiKa5tMw86CZbk4_kLiXWvCmVvCWiw1xn_6kzt2P8SKqOhj5KakNTcZk1WeB1i=w800-h533-s-no?authuser=1" title="Untitled, 2023.">
+<img src="https://lh3.googleusercontent.com/pw/AIL4fc86sVPk6DgBMoDdXC_GHJ_V_JKB-_RqTdPU_PD23sqRM5nMayyJTg16ouzWa9EYJixn0e2hGle4sSHje5s2ZbUWXZDI363MGq1Novgg6VUwgvk-qQ4xMFVQz7soAY3Qji1BIk1NhZX1Rl5S-258QPEK=w800-h533-s-no?authuser=1" title="Untitled, 2023.">
+<img src="https://lh3.googleusercontent.com/pw/AIL4fc8WwS4ved-RCBT32_hvqCgfty0K6qQ_-lV9t2NdFmE-0iJkEDuZAeHSUhKSWHN64MVPdyJyIijvSGu6dXjsnM5UbXoOjWKhulutg1r3bNHmKqtmtKgdbVhRX7KjkSV6Svw9TxMW-OHE-INecs0KlnGg=w800-h533-s-no?authuser=1 title="Untitled, 2023.">
+
+
+</div>
+
+<!-- DO NOT TOUCH BELOW THIS LINE -->
+<div class="credit">
+    <a href="https://aureacor.tumblr.com" title="AUREACOR">Theme by @aureacor</i></i></a>
+</div>
+
+</body>
